@@ -1,12 +1,11 @@
 name:                composition
-version:             1.0.1.0
+version:             1.0.1.1
 synopsis:            Combinators for unorthodox function composition
 
 license:             BSD3
 license-file:        LICENSE
 author:              Dan Burton
 maintainer:          danburton.email@gmail.com
-homepage:            http://patch-tag.com/r/DanBurton/composition/home
 
 category:            Data
 build-type:          Simple
@@ -18,10 +17,5 @@ library
   extensions:          NoImplicitPrelude
 
 source-repository head
-  type:     darcs
-  location: http://patch-tag.com/r/DanBurton/composition
-
-source-repository this
-  type:     darcs
-  location: http://patch-tag.com/r/DanBurton/composition
-  tag:      composition-1.0.1.0
+  type:     git
+  location: git://github.com/DanBurton/composition.git
