@@ -1,0 +1,3 @@
+packages:
+- '.'
+resolver: ghc-7.10.2

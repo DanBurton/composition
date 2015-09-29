@@ -1,11 +1,13 @@
 name:                composition
-version:             1.0.1.1
+version:             1.0.2
 synopsis:            Combinators for unorthodox function composition
 
 license:             BSD3
 license-file:        LICENSE
 author:              Dan Burton
 maintainer:          danburton.email@gmail.com
+bug-reports:
+  https://github.com/DanBurton/composition/issues
 
 category:            Data
 build-type:          Simple
