@@ -1,5 +1,5 @@
 name:                composition
-version:             1.0.2
+version:             1.0.2.1
 synopsis:            Combinators for unorthodox function composition
 
 license:             BSD3
