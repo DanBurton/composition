@@ -63,7 +63,7 @@ infixr 9 ∘
 --
 -- Example usage:
 --
--- > concatMap :: (a -> b) -> [a] -> [b]
+-- > concatMap :: (a -> [b]) -> [a] -> [b]
 -- > concatMap = concat .: map
 --
 -- Notice how /two/ arguments
