@@ -2,8 +2,6 @@
 -- more than it is for providing actual value.
 -- I do not recommend that you rely on this module
 -- for performance-sensitive code.
--- Because this module is not based on Prelude's (.),
--- some chances at optimization might be missed by your compiler.
 module Data.Composition (
   -- * Math
     (∘)
@@ -41,11 +39,7 @@ module Data.Composition (
 
   ) where
 
--- Not exported. This is defined here to remove the dependency on base
-(.) :: (b -> c) -> (a -> b) -> a -> c
-(f . g) x = f (g x)
-
-infixr 9 .
+import Prelude ((.))
 
 -- | The mathematical symbol for function composition.
 (∘) :: (b -> c) -> (a -> b) -> a -> c
