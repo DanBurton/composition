@@ -18,6 +18,10 @@ library
   hs-source-dirs:      src
   exposed-modules:     Data.Composition
   default-extensions:  NoImplicitPrelude
+  if(impl(ghc >= 10.1))
+    -- removes the implicit dependency on GHC.Essentials
+    -- (we'd need a dependency on base to satisfy it otherwise)
+    ghc-options: -frebindable-known-names
 
 source-repository head
   type:     git
